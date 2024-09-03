@@ -35,7 +35,7 @@ return (
     <section className="App-products">
       {products.map((product) => (
         <div key={product.id} className="App-product">
-          <img src={product.imge} alt={product.name} />
+          <img src={product.image} alt={product.name} />
           <h3>{product.name}</h3>
           <p>${product.price}</p>
           <button onClick={() => addToCart(product.id)}>Add to cart</button>
